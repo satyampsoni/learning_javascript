@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="main">
+        <h3>Survey form</h3>
+        <form action="">
+            <p>
+                Name: 
+                <br>
+                <input type="text" name="name" id="name" required placeholder="Enter your name: ">
+                   
+            </p>
+            <p>
+                Email: 
+                <br>
+                <input type="email" name="email" id="email" required placeholder="Enter your Email: ">
+            </p>
+
+            <p>
+                Age: 
+                <br>
+                <input type="number" name="age" id="age" required placeholder="Enter your Age:">
+            </p>
+
+            <p>
+                <label for="describe">Which option best describes you?</label>
+                <br>
+                <select id="describe" aria-placeholder="Choose your profession">
+                    <option value="student">student</option>
+                    <option value="programmer">Programmer</option>
+                    <option value="Entreprenuer">Entreprenuer</option>
+                </select>
+            </p>
+
+                <div style="text transform: capitalize">
+                would you recommend this survey form to anyone?
+                <br>
+                <input type="radio" id="yes" name="recommend" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="No" name="recommend" value="No">
+                <label for="No">No</label><br>
+                <input type="radio" id="Maybe" name="recommend" value="Maybe">
+                <label for="Maybe">Maybe</label>
+                </div>  
+
+            <div>
+                Languages and frameworks known(check all if applied)
+                <br>
+                <input type="checkbox" id="c" name="language" value="c">
+                <label for="c">c</label>
+                <br>
+        
+                <input type="checkbox" id="c++" name="language" value="c++">
+                 <label for="c++">c++</label>
+
+                 <br>
+                <input type="checkbox" id="C#" name="language" value="C#">
+                <label for="C#">C#</label>
+
+                <br>
+
+                <input type="checkbox" id="Pyhton" name="language" value="Pyhton">
+                <label for="Python">Pyhton</label>
+
+                <br>
+
+    
+                <input type="checkbox" id="java" name="language" value="java">
+                <label for="java">java</label>
+
+                <br>
+
+                <input type="checkbox" id="javascript" name="language" value="javascript">
+                <label for="javascript">javascript</label>
+
+                <br>
+                <input type="checkbox" id="React" name="language" value="React">
+                <label for="React">React</label>
+
+                <br>
+                <input type="checkbox" id="Angular" name="language" value="Angular">
+                <label for="Angular">Angular</label>
+
+                <br>
+                <input type="checkbox" id="vue" name="language" value="vue">
+                <label for="vue">vue</label>
+
+                <br>
+
+            </div>
+
+            <p>
+                Any comments or suggestions:
+                <br>
+                <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Enter your feedback:"></textarea>
+            </p>
+
+
+        </form>
+    </div>
+
+        
+    
+</body>
+</html>

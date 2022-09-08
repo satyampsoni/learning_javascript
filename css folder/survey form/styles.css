@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(228, 234, 228);
+    font: verdana;
+    text-align: center;
+}
+
+#main{
+    background-color: white;
+    
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+p{
+    display: block;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+br{
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+select, textarea, p input, p select, p textarea{
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    width: 95%;
+}
+
+div input, div select{
+    align-self: flex-end;
+}
