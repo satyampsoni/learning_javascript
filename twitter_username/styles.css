@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box; /*Border-boxing ensures padding and border are included in the width and height */
+}
+
+body {
+  background-color: 	#1DA1F2; 
+  color: #fff;
+  font-family: 'Roboto', sans-serif; /* If the font family Roboto won't work the sans-serif will run automatically */
+  display: flex; /* It will arrange all the files in one dimesions */
+  flex-direction: column;/*All the items will be arranged in flex*/
+  align-items: center; /* All the items will be aligned to center*/
+  justify-content: center; /* will pack the items around the center */
+  height: 100vh; /* Height will be 100% of the viewport*/
+  overflow: auto; /* If the content overflows it will add scroll bar automatically as required */
+  margin: 0;
+}
+
+.twitter{
+   height: 80px;
+   width: 100px;
+   margin-bottom: 20px;
+}
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.user-form input {
+  width: 100%;
+  display: block;
+  background-color: black;
+  border: none;
+  border-radius: 10px; 
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem; /*size will be sent to browser based font*/
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-form input::placeholder {
+  color:white;
+}
+
+.user-form input:focus {
+  outline: none;
+}
+
+
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-form {
+    max-width: 400px;
+  }
+}
